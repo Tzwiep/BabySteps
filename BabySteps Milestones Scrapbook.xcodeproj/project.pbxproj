@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		107CEC6926A5E08400116D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC6826A5E08400116D07 /* AppDelegate.swift */; };
+		107CEC6B26A5E08400116D07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC6A26A5E08400116D07 /* SceneDelegate.swift */; };
+		107CEC6D26A5E08400116D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC6C26A5E08400116D07 /* ViewController.swift */; };
+		107CEC7026A5E08400116D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107CEC6E26A5E08400116D07 /* Main.storyboard */; };
+		107CEC7326A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC7126A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld */; };
+		107CEC7526A5E08700116D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107CEC7426A5E08700116D07 /* Assets.xcassets */; };
+		107CEC7826A5E08700116D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107CEC7626A5E08700116D07 /* LaunchScreen.storyboard */; };
+		107CEC8526A5E37E00116D07 /* MilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */; };
+		107CEC8726A5EBF000116D07 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8626A5EBF000116D07 /* MapViewController.swift */; };
+		107CEC8926A5EC0F00116D07 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */; };
+		107CEC8B26A5EC2000116D07 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */; };
+		107CECA526A5FB3300116D07 /* MilestoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CECA426A5FB3300116D07 /* MilestoneTableViewCell.swift */; };
+		107CECA726A6031F00116D07 /* defaultData.json in Resources */ = {isa = PBXBuildFile; fileRef = 107CECA626A6031F00116D07 /* defaultData.json */; };
+		107CECB626A626DF00116D07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CECB526A626DF00116D07 /* Constants.swift */; };
+		1085E01926A724FB009C330F /* ScaledHeightImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E01826A724FB009C330F /* ScaledHeightImageView.swift */; };
+		1085E02726A757C3009C330F /* AddDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E02626A757C3009C330F /* AddDescriptionViewController.swift */; };
+		1085E0A826A897DC009C330F /* Milestone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */; };
+		1085E0A926A897DC009C330F /* Milestone+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		107CEC6526A5E08400116D07 /* BabySteps Milestones Scrapbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BabySteps Milestones Scrapbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		107CEC6826A5E08400116D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		107CEC6A26A5E08400116D07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		107CEC6C26A5E08400116D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		107CEC6F26A5E08400116D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		107CEC7226A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabySteps_Milestones_Scrapbook.xcdatamodel; sourceTree = "<group>"; };
+		107CEC7426A5E08700116D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		107CEC7726A5E08700116D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		107CEC7926A5E08700116D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneViewController.swift; sourceTree = "<group>"; };
+		107CEC8626A5EBF000116D07 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		107CECA426A5FB3300116D07 /* MilestoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneTableViewCell.swift; sourceTree = "<group>"; };
+		107CECA626A6031F00116D07 /* defaultData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultData.json; sourceTree = "<group>"; };
+		107CECB526A626DF00116D07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1085E01826A724FB009C330F /* ScaledHeightImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledHeightImageView.swift; sourceTree = "<group>"; };
+		1085E02626A757C3009C330F /* AddDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDescriptionViewController.swift; sourceTree = "<group>"; };
+		1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		107CEC6226A5E08400116D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		107CEC5C26A5E08300116D07 = {
+			isa = PBXGroup;
+			children = (
+				107CEC6726A5E08400116D07 /* BabySteps Milestones Scrapbook */,
+				107CEC6626A5E08400116D07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		107CEC6626A5E08400116D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				107CEC6526A5E08400116D07 /* BabySteps Milestones Scrapbook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		107CEC6726A5E08400116D07 /* BabySteps Milestones Scrapbook */ = {
+			isa = PBXGroup;
+			children = (
+				107CEC6826A5E08400116D07 /* AppDelegate.swift */,
+				107CEC6A26A5E08400116D07 /* SceneDelegate.swift */,
+				107CEC8126A5E0E000116D07 /* Models */,
+				107CEC8026A5E0CF00116D07 /* Storyboards */,
+				107CEC8326A5E0FE00116D07 /* View Controllers */,
+				107CEC7426A5E08700116D07 /* Assets.xcassets */,
+				107CEC7926A5E08700116D07 /* Info.plist */,
+				107CECB426A626D100116D07 /* Helper Classes */,
+				107CECA326A5FAE700116D07 /* Views */,
+				107CEC7F26A5E0B900116D07 /* Core Data */,
+			);
+			path = "BabySteps Milestones Scrapbook";
+			sourceTree = "<group>";
+		};
+		107CEC7F26A5E0B900116D07 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				107CECA626A6031F00116D07 /* defaultData.json */,
+				107CEC7126A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		107CEC8026A5E0CF00116D07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				107CEC6E26A5E08400116D07 /* Main.storyboard */,
+				107CEC7626A5E08700116D07 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		107CEC8126A5E0E000116D07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */,
+				1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		107CEC8326A5E0FE00116D07 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				107CEC6C26A5E08400116D07 /* ViewController.swift */,
+				107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */,
+				107CEC8626A5EBF000116D07 /* MapViewController.swift */,
+				107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */,
+				107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */,
+				1085E02626A757C3009C330F /* AddDescriptionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		107CECA326A5FAE700116D07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				107CECA426A5FB3300116D07 /* MilestoneTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		107CECB426A626D100116D07 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				107CECB526A626DF00116D07 /* Constants.swift */,
+				1085E01826A724FB009C330F /* ScaledHeightImageView.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		107CEC6426A5E08400116D07 /* BabySteps Milestones Scrapbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 107CEC7C26A5E08700116D07 /* Build configuration list for PBXNativeTarget "BabySteps Milestones Scrapbook" */;
+			buildPhases = (
+				107CEC6126A5E08400116D07 /* Sources */,
+				107CEC6226A5E08400116D07 /* Frameworks */,
+				107CEC6326A5E08400116D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BabySteps Milestones Scrapbook";
+			productName = "BabySteps Milestones Scrapbook";
+			productReference = 107CEC6526A5E08400116D07 /* BabySteps Milestones Scrapbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		107CEC5D26A5E08300116D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					107CEC6426A5E08400116D07 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 107CEC6026A5E08300116D07 /* Build configuration list for PBXProject "BabySteps Milestones Scrapbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 107CEC5C26A5E08300116D07;
+			productRefGroup = 107CEC6626A5E08400116D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				107CEC6426A5E08400116D07 /* BabySteps Milestones Scrapbook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		107CEC6326A5E08400116D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107CEC7826A5E08700116D07 /* LaunchScreen.storyboard in Resources */,
+				107CECA726A6031F00116D07 /* defaultData.json in Resources */,
+				107CEC7526A5E08700116D07 /* Assets.xcassets in Resources */,
+				107CEC7026A5E08400116D07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		107CEC6126A5E08400116D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107CECA526A5FB3300116D07 /* MilestoneTableViewCell.swift in Sources */,
+				107CEC6D26A5E08400116D07 /* ViewController.swift in Sources */,
+				1085E0A826A897DC009C330F /* Milestone+CoreDataClass.swift in Sources */,
+				107CEC8726A5EBF000116D07 /* MapViewController.swift in Sources */,
+				1085E0A926A897DC009C330F /* Milestone+CoreDataProperties.swift in Sources */,
+				107CEC7326A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld in Sources */,
+				107CEC8526A5E37E00116D07 /* MilestoneViewController.swift in Sources */,
+				1085E01926A724FB009C330F /* ScaledHeightImageView.swift in Sources */,
+				107CECB626A626DF00116D07 /* Constants.swift in Sources */,
+				107CEC8B26A5EC2000116D07 /* DescriptionViewController.swift in Sources */,
+				107CEC8926A5EC0F00116D07 /* DetailsViewController.swift in Sources */,
+				107CEC6926A5E08400116D07 /* AppDelegate.swift in Sources */,
+				107CEC6B26A5E08400116D07 /* SceneDelegate.swift in Sources */,
+				1085E02726A757C3009C330F /* AddDescriptionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		107CEC6E26A5E08400116D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				107CEC6F26A5E08400116D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		107CEC7626A5E08700116D07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				107CEC7726A5E08700116D07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		107CEC7A26A5E08700116D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		107CEC7B26A5E08700116D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		107CEC7D26A5E08700116D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BabySteps Milestones Scrapbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TylerZwiep.BabySteps-Milestones-Scrapbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		107CEC7E26A5E08700116D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BabySteps Milestones Scrapbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TylerZwiep.BabySteps-Milestones-Scrapbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		107CEC6026A5E08300116D07 /* Build configuration list for PBXProject "BabySteps Milestones Scrapbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				107CEC7A26A5E08700116D07 /* Debug */,
+				107CEC7B26A5E08700116D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		107CEC7C26A5E08700116D07 /* Build configuration list for PBXNativeTarget "BabySteps Milestones Scrapbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				107CEC7D26A5E08700116D07 /* Debug */,
+				107CEC7E26A5E08700116D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		107CEC7126A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				107CEC7226A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodel */,
+			);
+			currentVersion = 107CEC7226A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodel */;
+			path = BabySteps_Milestones_Scrapbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 107CEC5D26A5E08300116D07 /* Project object */;
+}

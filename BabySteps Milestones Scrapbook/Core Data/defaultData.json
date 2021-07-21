@@ -1,0 +1,67 @@
+[
+    {
+		"title": "Postcard from Hawaii",
+		"image": "firstMail",
+        "date": "2021-06-19",
+        "lat": 44.492495,
+        "long": -80.221031,
+		"summary": "Baby's first mail came arrived today... a ostcard from his Aunt N in Hawaii! He was soooooo excited to read it!"
+	},
+	{
+		"title": "First Smile",
+		"image": "firstSmile",
+        "date": "2021-03-21",
+        "lat": 44.492495,
+        "long": -80.2211417,
+		"summary": "First smile where he is looking at the camera (and doesn't have gas)! We took so many pictures, but this one is the cutest!!"
+	},
+    {
+        "title": "3 Months",
+        "image": "threeMonths",
+        "date": "2021-03-30",
+        "lat": 44.492495,
+        "long": -80.2211417,
+        "summary": "Just a little nugget still!"
+    },
+	{
+		"title": "First Swing Ride",
+		"image": "swing",
+        "date": "2021-07-07",
+        "lat": 44.492495,
+        "long": -80.2211417,
+		"summary": "Trying out the swing... not too impressed... but he loved watching the other kids swing!"
+	},
+    {
+        "title": "Meeting Uncle C",
+        "image": "meetingUncle",
+        "date": "2021-06-29",
+        "lat": 44.492495,
+        "long": -80.2211417,
+        "summary": "It was a dark and stormy night... Baby finally got to meet his future shred doggie after a long COVID delay"
+    },
+    {
+        "title": "Lil Dutch Boy",
+        "image": "soccer",
+        "date": "2021-07-04",
+        "lat": 44.492495,
+        "long": -80.2211417,
+        "summary": "Cheering on his favourite team, the Netherlands, during the Euros 2021. They lost bad, but he didn't care! "
+    },
+	{
+		"title": "First Father's Day",
+		"image": "fathersDay",
+        "date": "2021-06-20",
+        "lat": 44.492495,
+        "long": -80.2211417,
+		"summary": "My first Father's Day wasn't very relaxing, as I had to do a Midterm for Swift."
+	},
+    {
+        "title": "Half Year Old",
+        "image": "sixMonths",
+        "date": "2021-07-30",
+        "lat": 44.492495,
+        "long": -80.2211417,
+        "summary": "Little dude is growing up so fast!"
+    },
+    
+]
