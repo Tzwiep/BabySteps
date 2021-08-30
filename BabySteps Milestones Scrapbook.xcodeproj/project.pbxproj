@@ -17,14 +17,12 @@
 		107CEC8526A5E37E00116D07 /* MilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */; };
 		107CEC8726A5EBF000116D07 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8626A5EBF000116D07 /* MapViewController.swift */; };
 		107CEC8926A5EC0F00116D07 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */; };
-		107CEC8B26A5EC2000116D07 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */; };
 		107CECA526A5FB3300116D07 /* MilestoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CECA426A5FB3300116D07 /* MilestoneTableViewCell.swift */; };
-		107CECA726A6031F00116D07 /* defaultData.json in Resources */ = {isa = PBXBuildFile; fileRef = 107CECA626A6031F00116D07 /* defaultData.json */; };
-		107CECB626A626DF00116D07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107CECB526A626DF00116D07 /* Constants.swift */; };
 		1085E01926A724FB009C330F /* ScaledHeightImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E01826A724FB009C330F /* ScaledHeightImageView.swift */; };
-		1085E02726A757C3009C330F /* AddDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E02626A757C3009C330F /* AddDescriptionViewController.swift */; };
-		1085E0A826A897DC009C330F /* Milestone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */; };
-		1085E0A926A897DC009C330F /* Milestone+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */; };
+		1085E0AB26ADC6EA009C330F /* AddMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1085E0AA26ADC6EA009C330F /* AddMilestoneViewController.swift */; };
+		109B75CA26AF825A002B7E23 /* Milestone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B75C826AF825A002B7E23 /* Milestone+CoreDataClass.swift */; };
+		109B75CB26AF825A002B7E23 /* Milestone+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B75C926AF825A002B7E23 /* Milestone+CoreDataProperties.swift */; };
+		109B75CF26B0C1D7002B7E23 /* EditMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B75CE26B0C1D7002B7E23 /* EditMilestoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +38,12 @@
 		107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneViewController.swift; sourceTree = "<group>"; };
 		107CEC8626A5EBF000116D07 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		107CECA426A5FB3300116D07 /* MilestoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneTableViewCell.swift; sourceTree = "<group>"; };
-		107CECA626A6031F00116D07 /* defaultData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultData.json; sourceTree = "<group>"; };
-		107CECB526A626DF00116D07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1085E01826A724FB009C330F /* ScaledHeightImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledHeightImageView.swift; sourceTree = "<group>"; };
-		1085E02626A757C3009C330F /* AddDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDescriptionViewController.swift; sourceTree = "<group>"; };
-		1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1085E0AA26ADC6EA009C330F /* AddMilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMilestoneViewController.swift; sourceTree = "<group>"; };
+		109B75C826AF825A002B7E23 /* Milestone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataClass.swift"; sourceTree = "<group>"; };
+		109B75C926AF825A002B7E23 /* Milestone+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Milestone+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		109B75CE26B0C1D7002B7E23 /* EditMilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMilestoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +93,6 @@
 		107CEC7F26A5E0B900116D07 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				107CECA626A6031F00116D07 /* defaultData.json */,
 				107CEC7126A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld */,
 			);
 			path = "Core Data";
@@ -115,8 +110,8 @@
 		107CEC8126A5E0E000116D07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1085E0A626A897DC009C330F /* Milestone+CoreDataClass.swift */,
-				1085E0A726A897DC009C330F /* Milestone+CoreDataProperties.swift */,
+				109B75C826AF825A002B7E23 /* Milestone+CoreDataClass.swift */,
+				109B75C926AF825A002B7E23 /* Milestone+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,10 +121,10 @@
 			children = (
 				107CEC6C26A5E08400116D07 /* ViewController.swift */,
 				107CEC8426A5E37E00116D07 /* MilestoneViewController.swift */,
-				107CEC8626A5EBF000116D07 /* MapViewController.swift */,
 				107CEC8826A5EC0F00116D07 /* DetailsViewController.swift */,
-				107CEC8A26A5EC2000116D07 /* DescriptionViewController.swift */,
-				1085E02626A757C3009C330F /* AddDescriptionViewController.swift */,
+				107CEC8626A5EBF000116D07 /* MapViewController.swift */,
+				1085E0AA26ADC6EA009C330F /* AddMilestoneViewController.swift */,
+				109B75CE26B0C1D7002B7E23 /* EditMilestoneViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,7 +140,6 @@
 		107CECB426A626D100116D07 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
-				107CECB526A626DF00116D07 /* Constants.swift */,
 				1085E01826A724FB009C330F /* ScaledHeightImageView.swift */,
 			);
 			path = "Helper Classes";
@@ -209,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				107CEC7826A5E08700116D07 /* LaunchScreen.storyboard in Resources */,
-				107CECA726A6031F00116D07 /* defaultData.json in Resources */,
 				107CEC7526A5E08700116D07 /* Assets.xcassets in Resources */,
 				107CEC7026A5E08400116D07 /* Main.storyboard in Resources */,
 			);
@@ -223,19 +216,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				107CECA526A5FB3300116D07 /* MilestoneTableViewCell.swift in Sources */,
+				109B75CA26AF825A002B7E23 /* Milestone+CoreDataClass.swift in Sources */,
 				107CEC6D26A5E08400116D07 /* ViewController.swift in Sources */,
-				1085E0A826A897DC009C330F /* Milestone+CoreDataClass.swift in Sources */,
+				109B75CF26B0C1D7002B7E23 /* EditMilestoneViewController.swift in Sources */,
 				107CEC8726A5EBF000116D07 /* MapViewController.swift in Sources */,
-				1085E0A926A897DC009C330F /* Milestone+CoreDataProperties.swift in Sources */,
 				107CEC7326A5E08400116D07 /* BabySteps_Milestones_Scrapbook.xcdatamodeld in Sources */,
+				1085E0AB26ADC6EA009C330F /* AddMilestoneViewController.swift in Sources */,
 				107CEC8526A5E37E00116D07 /* MilestoneViewController.swift in Sources */,
 				1085E01926A724FB009C330F /* ScaledHeightImageView.swift in Sources */,
-				107CECB626A626DF00116D07 /* Constants.swift in Sources */,
-				107CEC8B26A5EC2000116D07 /* DescriptionViewController.swift in Sources */,
+				109B75CB26AF825A002B7E23 /* Milestone+CoreDataProperties.swift in Sources */,
 				107CEC8926A5EC0F00116D07 /* DetailsViewController.swift in Sources */,
 				107CEC6926A5E08400116D07 /* AppDelegate.swift in Sources */,
 				107CEC6B26A5E08400116D07 /* SceneDelegate.swift in Sources */,
-				1085E02726A757C3009C330F /* AddDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

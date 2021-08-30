@@ -1,6 +1,6 @@
 //
 //  MilestoneViewController.swift
-//  BabySteps Milestones Scrapbook
+//  BabySteps
 //
 //  Created by Tyler Zwiep on 2021-07-19.
 //
@@ -12,20 +12,14 @@ class MilestoneViewController: UIViewController {
     // properties
     var milestone:Milestone?
     
-    //computed properties for the three child view controllers
+    // computed properties for the two child view controllers
     // use of lazy to prevent code from running prior to user selection
     lazy var detailsViewContoller:DetailsViewController = {
         // create an instance of DetailsViewController
         let detailsVC = self.storyboard?.instantiateViewController(identifier: "DetailsVC") as! DetailsViewController
         return detailsVC
     }()
-    /*
-    lazy var descriptionViewContoller:DescriptionViewController = {
-        // create an instance of DescriptionViewController
-        let descriptionVC = self.storyboard?.instantiateViewController(identifier: "DescriptionVC") as! DescriptionViewController
-        return descriptionVC
-    }()
-    */
+
     lazy var mapViewContoller:MapViewController = {
         // create an instance of MapViewController
         let mapVC = self.storyboard?.instantiateViewController(identifier: "MapVC") as! MapViewController
@@ -49,26 +43,24 @@ class MilestoneViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     // modify viewWillAppear... called every time the view is displayed
     override func viewWillAppear(_ animated: Bool) {
-        // set milestone image
-        if milestone?.imageName != nil {
-            milestoneImage.image = UIImage(named: milestone!.imageName!)
+        // set milestone image if not nil
+        if milestone?.image != nil {
+            milestoneImage.image = UIImage(data: milestone!.image!)
             }
         // set milestone title
         titleLabel.text = milestone?.title
         // set milestone date
         yearLabel.text = milestone?.date
         
-        // call function to switch to DetailsViewContoller from computed property
-        //switchChildViewControllers(detailsViewContoller)
-        
         // make sure first segment is displayed
         segmentValueChanged(self.segmentedControl)
     }
     
 
-    // this method is used to switch between the childViewControllers - details, description, and map
+    // this function is used to switch between the childViewControllers - summary and map
     func switchChildViewControllers(_ childVC: UIViewController) {
         // make it a child view controller of the MilestoneViewController
         addChild(childVC)
@@ -84,7 +76,7 @@ class MilestoneViewController: UIViewController {
     }
 
     // Actions
-    // this action uses a switch statement to call one of the three segmented values and direct it to the appropriate childView
+    // this action uses a switch statement to call one of the two segmented values and direct it to the appropriate childView
     // also sets the milestone property of each view to the selected Milestone
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {

@@ -1,14 +1,14 @@
 //
-//  ImageExtension.swift
-//  BabySteps Milestones Scrapbook
+//  ScaledHeightImageView.swift
+//  BabySteps
 //
 //  Created by Tyler Zwiep on 2021-07-20.
 //
 
-// this class resolves the issue of aspect fill leaving space between imageView and the label
-// by scaling the image and maintaining the aspect ratio
-// This class was created based on information found at:
-// https://stackoverflow.com/questions/41154784/how-to-resize-uiimageview-based-on-uiimages-size-ratio-in-swift-3
+/* this class resolves the issue of aspect fill leaving space between imageView and the label,
+ by scaling the image and maintaining the aspect ratio. This class was created based on information found at:
+ https://stackoverflow.com/questions/41154784/how-to-resize-uiimageview-based-on-uiimages-size-ratio-in-swift-3
+*/
 
 import Foundation
 import UIKit

@@ -1,6 +1,6 @@
 //
 //  MilestoneTableViewCell.swift
-//  BabySteps Milestones Scrapbook
+//  BabySteps
 //
 //  Created by Tyler Zwiep on 2021-07-19.
 //
@@ -30,6 +30,7 @@ class MilestoneTableViewCell: UITableViewCell {
         marginView.layer.shadowColor = CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1)
         marginView.layer.shadowRadius = 5
         marginView.layer.shadowOpacity = 0.5
+        marginView.layer.shadowOffset = .zero
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,11 +40,10 @@ class MilestoneTableViewCell: UITableViewCell {
     }
     
     // method for setting custom cell
-    
     func setTableCell(_ m:Milestone) {
         
         // set the image
-        self.momentImage.image = UIImage(named: m.imageName!)
+        self.momentImage.image = UIImage(data: m.image!)
         
         //set the label
         self.titleLabel.text = m.title

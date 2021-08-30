@@ -1,6 +1,6 @@
 //
 //  DetailsViewController.swift
-//  BabySteps Milestones Scrapbook
+//  BabySteps
 //
 //  Created by Tyler Zwiep on 2021-07-19.
 //
@@ -13,6 +13,7 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var summaryLabel: UILabel!
     
+    
     // properties
     var milestone:Milestone?
     
@@ -22,9 +23,9 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    // called eachtime view loads... set label to summary of Milestone
+    // called each time view loads... set label to summary of Milestone
     override func viewWillAppear(_ animated: Bool) {
         summaryLabel.text = milestone?.summary
     }
-
+    
 }

@@ -1,8 +1,8 @@
 //
 //  Milestone+CoreDataProperties.swift
-//  BabySteps Milestones Scrapbook
+//  BabySteps
 //
-//  Created by Tyler Zwiep on 2021-07-21.
+//  Created by Tyler Zwiep on 2021-07-26.
 //
 //
 
@@ -16,12 +16,12 @@ extension Milestone {
         return NSFetchRequest<Milestone>(entityName: "Milestone")
     }
 
-    @NSManaged public var imageName: String?
-    @NSManaged public var title: String?
     @NSManaged public var date: String?
     @NSManaged public var lat: Double
-    @NSManaged public var summary: String?
     @NSManaged public var long: Double
+    @NSManaged public var summary: String?
+    @NSManaged public var title: String?
+    @NSManaged public var image: Data?
 
 }
 

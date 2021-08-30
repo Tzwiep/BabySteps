@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  BabySteps Milestones Scrapbook
+//  BabySteps
 //
 //  Created by Tyler Zwiep on 2021-07-19.
 //
@@ -12,65 +12,165 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //load default data
-        loadDefaultData()
+        //call load default data function that checks if first time opening app
+        preloadData()
         
         return true
     }
-    
-    // preloading default data
-    func loadDefaultData(){
+    /*
+        This function calls all the preload milestone functions to load, loading default data into the app if it is the first time the app is opened,
+        and save it to core data database
+     */
+    func preloadData(){
         
+        // create instance of UserDefaults class - for interacting with defaults system
         let defaults = UserDefaults.standard
-        // reference to core data context
-        let context = persistentContainer.viewContext
         
+        // store bool data type in defaults as a flag variable to determine if first time running app
+        // returns true is key exists
         if defaults.bool(forKey: "launchFlag") == false {
-            
         
-        // add info from json file into core data
-        // path to json file
-        let path = Bundle.main.path(forResource: "defaultData", ofType: "json")
-        
-        // URL using path
-        let url = URL(fileURLWithPath: path!)
-        
-        do {
-            // Data from file
-            let data = try Data(contentsOf: url)
-            
-            // serialize json data > cast as a dictionary with key-value pairs ... Keys are strings... values can be any
-            let jsonFile = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [ [String:Any] ]
-        
-       
-            // loop though and create milestone objects
-            for f in jsonFile {
-            //create object
-                let m = Milestone(context: context)
-                m.title = f["title"] as? String
-                m.imageName = f["image"] as? String
-                m.summary = f["summary"] as? String
-                m.lat = f["lat"] as! Double
-                m.long = f["long"] as! Double
-                m.date = f["date"] as? String
-            }
-        }
-        catch{
-            print("Error: Something went wrong")
-        }
-        
-        // save data
-        self.saveContext()
-            
-            //set flag
+            // call the preload data functions
+            loadMilestone1()
+            loadMilestone2()
+            loadMilestone3()
+            loadMilestone4()
+            loadMilestone5()
+            loadMilestone6()
+            loadMilestone7()
+                
+            //set flag to return true next time app opens, to avoid loading data again
             defaults.set(true, forKey: "launchFlag")
         }
     }
-
+    
+    // -------------------  Default Data Functions ---------------------------
+    // hardcoded default data to preload into the application
+    
+    func loadMilestone1(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone1 = Milestone(context: context)
+        milestone1.title = "Wish You Were Here!"
+        milestone1.image = UIImage(named: "firstMail")?.jpegData(compressionQuality: 1)
+        milestone1.summary = "Baby's first mail arrived today... a postcard from his Aunt N in Hawaii! He was soooooo excited to read it!"
+        milestone1.lat = 44.492495
+        milestone1.long = -80.221031
+        milestone1.date = "2021-06-21"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    func loadMilestone2(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone2 = Milestone(context: context)
+        milestone2.title = "First Father's Day"
+        milestone2.image = UIImage(named: "fathersDay")?.jpegData(compressionQuality: 1)
+        milestone2.summary = "First Father's Day... but sadly, I had to do a Swift midterm!? Luckily it was easy, and I got time with my little guy!"
+        milestone2.lat = 44.492495
+        milestone2.long = -80.221031
+        milestone2.date = "2021-06-20"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    func loadMilestone3(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone3 = Milestone(context: context)
+        milestone3.title = "Meeting Uncle C"
+        milestone3.image = UIImage(named: "meetingUncle")?.jpegData(compressionQuality: 1)
+        milestone3.summary = "It was a dark and stormy night... when Baby finally met his Uncle! Trapped in Colorado because of COVID, it was so electric when they finally got to meet that the power went out!"
+        milestone3.lat = 44.492495
+        milestone3.long = -80.221031
+        milestone3.date = "2021-06-25"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    func loadMilestone4(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone4 = Milestone(context: context)
+        milestone4.title = "1/2 Year Old"
+        milestone4.image = UIImage(named: "sixMonths")?.jpegData(compressionQuality: 1)
+        milestone4.summary = "I can't believe this cute dude is 6 months old! Time has gone by so fast, it feels like soon he'll be off at college!"
+        milestone4.lat = 44.492495
+        milestone4.long = -80.221031
+        milestone4.date = "2021-07-30"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    func loadMilestone5(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone5 = Milestone(context: context)
+        milestone5.title = "Three Months Old"
+        milestone5.image = UIImage(named: "threeMonths")?.jpegData(compressionQuality: 1)
+        milestone5.summary = "Still such a little nugget... crazy to think one day this hat will fit him!"
+        milestone5.lat = 44.492495
+        milestone5.long = -80.221031
+        milestone5.date = "2021-04-30"
+        
+        // save milestone
+        self.saveContext()
+    }
+ 
+    func loadMilestone6(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone6 = Milestone(context: context)
+        milestone6.title = "First Swing Ride"
+        milestone6.image = UIImage(named: "swing")?.jpegData(compressionQuality: 1)
+        milestone6.summary = "Not Sure how he felt about the trying the swing, but he loved to watch the other kids play!"
+        milestone6.lat = 44.492495
+        milestone6.long = -80.221031
+        milestone6.date = "2021-07-03"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    func loadMilestone7(){
+        // reference to core data context
+        let context = persistentContainer.viewContext
+        
+        // create new milestone object
+        let milestone7 = Milestone(context: context)
+        milestone7.title = "First Smile"
+        milestone7.image = UIImage(named: "firstSmile")?.jpegData(compressionQuality: 1)
+        milestone7.summary = "First smile where he is looking at the camera (and doesn't have gas)! We took so many pictures, but this one is the cutest!!"
+        milestone7.lat = 44.492495
+        milestone7.long = -80.221031
+        milestone7.date = "2021-03-06"
+        
+        // save milestone
+        self.saveContext()
+    }
+    
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
