@@ -55,8 +55,11 @@ class ViewController: UIViewController {
             // pass the request into the fetch method to retrivee the sorted milestones
             self.milestones = try context.fetch(request)
             
-            // reload table
-            self.tableView.reloadData()
+            // since reloading table is related to user interaction ...move UI update to main thread
+            DispatchQueue.main.async {
+                // reload table
+                self.tableView.reloadData()
+            }
             
         } catch {
             // Error Catching
