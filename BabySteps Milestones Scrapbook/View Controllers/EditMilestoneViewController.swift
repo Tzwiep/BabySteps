@@ -105,13 +105,6 @@ class EditMilestoneViewController: UIViewController,  UIImagePickerControllerDel
         
     }   // end of viewWillAppear
     
-    /*
-        Action function to dismiss the view when cancel btn is clicked... designed to keep a consistent look, even though not a navigation controller
-     */
-    @IBAction func cancelBtnClicked(_ sender: UIButton) {
-        // dismiss view
-        dismiss(animated: true, completion: nil)
-    }
     
     /*
         This IBAction function is called when the save button is clicked. It checks to make sure the  title and address fields are not empty, and then proceeds to save the new information to the current milestone.

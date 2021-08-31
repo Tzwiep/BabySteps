@@ -185,8 +185,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             editVC.milestone = milestoneToEdit
             
            // show view
-            editVC.modalPresentationStyle = .fullScreen
-            self.present(editVC, animated: true, completion: nil)
+           // editVC.modalPresentationStyle = .fullScreen
+           // self.present(editVC, animated: true, completion: nil)
+            // push to view
+            self.navigationController?.pushViewController(editVC, animated: true)
             
         }
         action.backgroundColor = .systemBlue
